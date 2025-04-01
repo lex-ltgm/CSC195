@@ -1,8 +1,17 @@
 #include <iostream>
+
 using namespace std;
 
 int main() {
-    cout << "Hello, World!" << endl;
-    cout << "Git is now tracking this project!" << endl;
-    return 0;
+
+    std::cout << "Hello, World!\n";
+    std::cout << "Git Integrated!\n";
+
+    int age;
+    std::cout << "Enter Name: " << std::endl;
+    std::cin >> age
+
+    cout << "Your age is " << age << endl;
+
+
 }
