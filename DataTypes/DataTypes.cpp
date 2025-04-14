@@ -19,7 +19,8 @@ float wage;
 short daysWorked;
 float hoursWorkedPerDay[7];
 const float TAX = 0.1f;
-    cout <<"Enter first name: ";
+
+cout <<"Enter first name: ";
 cin >> name;
 
 cout << "Enter initial of last name: ";
