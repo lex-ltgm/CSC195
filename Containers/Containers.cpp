@@ -34,8 +34,17 @@ int main()
 
     cout << "-------------------------------" << endl;
 
-    for (int i = 0; i < (*chemicals).size(); i++) {
+    cout << chemicals << endl;
+    cout << chemicals[0] << endl;
+    int size = sizeof(chemicals) / sizeof(chemicals[0]);
+
+    for (int i = 0; i < size; i++) {
         cout << &chemicals[i] << endl;
+    }
+
+    for (string chemical : chemicals) {
+        cout << chemical << endl;
+
     }
 
     cout << "-------------------------------" << endl;
