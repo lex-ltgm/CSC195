@@ -1,14 +1,22 @@
 #pragma once
+#include "Animal.h"
 #include <iostream>
-#include "Animal.h"	
+#include <fstream>
 using namespace std;
 
 class Dog : public Animal {
 private:
-	string breed;
+    string breed;
 
-public: 
-	void read() override;
-	void display() override;
-	Type getType() override { return DOG; }
+public:
+    // Original methods
+    void read() override;
+    void display() override;
+
+    // File I/O methods
+    void Read(ifstream& istream) override;
+    void Write(ofstream& ostream) override;
+
+    // Getters
+    Type getType() override { return DOG; }
 };
